@@ -1,0 +1,34 @@
+@media only screen and (max-width: 600px) {
+nav {
+        display: none; 
+        width: 100vw;
+        height: 70px;
+        margin-top: 0px;
+        margin-bottom: 14px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 10px;
+        background-color: var(--primary);
+        color: var(--white);
+    }
+
+    footer {
+        width: 100vw;
+        background-color: var(--primary);
+        color: var(--white);
+        
+    }
+
+    #logo {
+        display: none; 
+    }
+        #menu {
+            display: none;
+            height: 100%;
+            width: 150px;
+            background-image: url('./images/menu.svg');
+            background-repeat: no-repeat;
+            background-size: auto 50px;
+            margin-left: 28px;
+        }
+}

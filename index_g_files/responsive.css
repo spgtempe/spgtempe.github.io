@@ -1,0 +1,152 @@
+@media (max-width: 480px) {
+    .top-header ul li{
+        font-size: 13px;
+    }
+    .top-header ul li a{
+        font-size: 13px;
+    }
+    header .bg-light .navbar-nav .nav-item .nav-link{
+        font-size: 16px;
+    }
+    .banner-section{
+        /* height: 400px; */
+        /* padding: 30px 0; */
+    }
+    .video-section iframe{
+        width: 100%;
+    } 
+    .banner-section .txt-banner{
+        font-size: 18px;
+    }
+    .banner-section .title{
+        font-size: 35px;
+    }
+    .banner-section .sub-title{
+        font-size: 22px;
+    }
+    .txt-ab{
+        font-size: 21px;
+    }
+    .title-2{
+        font-size: 28px;
+    }
+    .sub-title, .btn.btn-primary{
+        font-size: 18px;
+    }
+    .version-section .vr-title{
+        font-size: 28px;
+    }
+    .inner-slider .owl-carousel .item{
+        height: 100%;
+    }
+    .inner-slider .owl-carousel .item .slider-top{
+        width: 100%;
+    }
+    .read-more{
+        font-size: 18px;
+    }
+    .lst-txt{
+        font-size: 20px;
+    }
+    .copyright-lsit{
+        flex-direction: column;
+    }
+    .copyright-lsit li{
+        padding: 5px 0;
+    }
+    .copyright-lsit li:nth-child(2)::after{
+        display: none;
+    }
+    .footer-title{
+        margin-top: 20px;
+    }
+    .custom-flex .btn{
+        float: none;
+        margin-top: 15px;
+    }
+    .btn.btn-contact{
+        font-size: 18px;
+    }
+    .top-footer{
+        padding-top: 0;
+    }
+    .inner-slider .owl-carousel .item{
+        padding: 20px 20px 50px;
+    }
+}
+        
+/* Low resolution Tablets and iPads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .banner-section{
+        /* height: 420px; */
+    }
+    .video-section iframe{
+        width: 100%;
+    }
+    .banner-section .txt-banner{
+        font-size: 35px;
+    }
+    .banner-section .title{
+        font-size: 60px;
+    }
+    .banner-section .sub-title{
+        font-size: 40px;
+    }
+    .txt-ab{
+        font-size: 25px;
+    }
+    .title-2{
+        font-size: 32px;
+    }
+    .sub-title{
+        font-size: 18px;
+    }
+    .btn.btn-primary{
+        font-size: 18px;
+    }
+    .version-section .vr-title{
+        font-size: 32px;
+    }
+    .inner-slider .owl-carousel .item .slider-top h3{
+        font-size: 20px;
+    }
+    .inner-slider .owl-carousel .item .slider-top p{
+        font-size: 16px;
+    }
+    .read-more{
+        font-size: 17px;
+    }
+    .lst-txt{
+        font-size: 18px;
+    }
+    .custom-flex .btn{
+        float: none;
+        margin-top: 20px;
+    }
+    .copyright-lsit{
+        flex-direction: column;
+    }
+    .copyright-lsit li{
+        padding: 5px 0;
+    }
+    .copyright-lsit li:nth-child(2)::after{
+        display: none;
+    }
+}
+        
+/* Tablets iPads (Portrait) */
+@media (min-width: 768px) and (max-width: 1024px){
+  
+}
+    
+/* Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+   
+}
+    
+/* Big boi Monitors */
+@media (min-width: 1281px) {
+    .banner-section{
+        /* height: 700px; */
+    }
+}
