@@ -15,7 +15,7 @@ body{
     margin: 0; 
     padding: 0; 
     overflow-x: hidden;
-    background-color: #003F91;
+    background-color: var(--black);
     
 }
 
@@ -29,15 +29,18 @@ h1{
 h2 {
     font-size: 3rem; 
     font-family: "IBM Plex Mono", monospace;
-        font-weight: 400;
+        font-weight: 300;
         font-style: normal;
+
+
 }
 
 h3 {
     font-size: 2rem;
         font-family: "IBM Plex Mono", monospace;
-            font-weight: 300;
+            font-weight: 200;
             font-style: normal;
+  
 }
 
 
@@ -130,7 +133,9 @@ nav > div
         order: 0;
 }
 
-
+#closeIcon {
+    display: none; 
+}
 
 #logo{
 
@@ -184,10 +189,9 @@ nav > div
 /*footer*/
 
 footer {
-
-    display: grid; 
-    grid-template-columns: 25% 25% 25% 25%;
-    background-color: var(--black);
+display: block;
+    gap: 36px;   
+     background-color: var(--black);
     font-family: "IBM Plex Sans", sans-serif;
     color: white; 
     padding: 48px;
@@ -197,9 +201,62 @@ footer {
     text-transform: uppercase;
 }
 
-.quicklist >  li >  a, a:hover, a:visited{
-    text-decoration: none;
+.contact > form {
+    width: 100%;
+}
+
+.contact > form > input, textarea {
+    width: 100%;
+    background-color: var(--black);
+    border: 2px white solid; 
+    border-radius: 4px;
+    height: 48px; 
+    margin-bottom: 12px;
     color: var(--white);
+    padding-right: 4px;
+
+}
+
+.contact > form > br {
+    margin-bottom: 4px;
+}
+
+.contact > form > label {
+    font-size: 1.5rem; 
+    margin-bottom: 12px;
+    line-height: 2rem;
+}
+.contact>form>input[type="text"]{
+    padding-top: 12px; 
+    padding-bottom: 12px;
+    padding-right: 4px;
+    font-family: "IBM Plex Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+
+            font-size: 1.25rem;
+
+
+}
+
+.contact>form>input[type="submit"] {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: "IBM Plex Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+    text-align: center;
+    background-color: var(--white);
+    color: var(--primary);
+    width: 30%;
+    font-size: 1.25rem;
+    border-radius: 12px;
 }
 
 /* index */ 
@@ -251,36 +308,57 @@ footer {
 
 .tagline{
     color: white; 
-    font-size: 4rem; 
-    text-align: center;
+    font-size: 2.5rem; 
+    display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+
+
 }
+
 
 .content { 
     padding: 48px; 
 }
 
+.tagline-image{
+    display: block; 
+    border-radius: 12px;
+    border: 0px solid; 
+        box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+        object-fit: cover;
+        height: auto; 
+        width: 100%;
+}
+
+
+
 .glance{
-    background-color: #003F91;
+    background-color: var(--white);
     padding: 48px; 
     margin: 0 auto; 
-    color: white; 
+    color: var(--primary) 
 }
 
 .services-container{
     display: grid; 
-    grid-template-columns: 33% 33% 33%;
-    gap: 12px; 
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));    gap: 12px; 
     margin: 0 auto; 
 
 }
 
+
+
 .services-container > div {
     border-radius: 4px;
     border: var(--white) 2px solid; 
-    color: white; 
+    color: var(--primary); 
     font-size: 1.25rem;
         font-family: "IBM Plex Sans", sans-serif;
     padding: 24px;
+    background-color: var(--white);
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+
 }
 
 .seeMore{
@@ -298,5 +376,34 @@ footer {
     padding: 12px; 
 
     border: 0px solid; 
+    margin-bottom: 30px;
 
 }
+
+
+
+.tagline-content{
+
+    font-size: 2rem;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 200;
+        font-style: normal;
+    }
+
+
+.tagline-content > p >button { 
+margin-top: 24px;
+    background-color: var(--white);
+    color: var(--primary);
+    font-size: 1.25rem;
+    border-radius: 12px;
+    font-family: "IBM Plex Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    padding: 12px;
+    border: 0px solid;
+}
+

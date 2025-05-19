@@ -8,24 +8,29 @@
     <title>SPG: SIGNAL PROCESSING</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=call" />
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles.css" />
+        <link rel="stylesheet" href="./assets/responsive.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=disabled_by_default" />
+
 </head>
 
 <body>
 
 
-
-
-
+    <div id="menu"><img src="./assets/images/menu.svg"/></div>
 
     <div class="navBar">
         <nav>
             <div id="logo"><img src="./assets/images/logoclassic.svg" /></div>
-            <div id="menu"></div>
             <div id="navBar">
+                <div id="closeIcon"><span class="material-symbols-rounded">
+                    disabled_by_default
+                </span></div>
                 <ul class="ibm-plex-mono-bold">
                     <li><a href="javascript:void(0)">Get started</a></li>
                     <li><a href="javascript:void(0)">Technology</a></li>
@@ -46,7 +51,7 @@
 
             SIGNAL PROCESSING GROUP
 
-            <h1>YOU DREAM IT, WE BUILD IT</h1>
+            <h2>YOU DREAM IT, WE BUILD IT</h2>
 
         </div>
     </div>
@@ -61,9 +66,18 @@
     <div class="container">
         <section class="alternate-black">
             <div class="tagline content ibm-plex-mono-semibold">
-                Signal Processing Group provides highly cost effective services with extremely low risk
+                <!--ATTRIBUTION FOR IMAGE: DONE BY UMBERTO @ UNSPLASH https://unsplash.com/photos/blue-circuit-board-jXd2FSvcRr8 -->
+                <div><img class="tagline-image" src="./assets/images/umberto-jXd2FSvcRr8-unsplash.jpg"></div>
+                <div class="tagline-content"><span style="font-size: 2rem; font-weight:400;">Signal Processing Group Inc.</span>
+            
+                 has been a trusted provider of innovative, cost-effective analog and mixed-signal solutions
+                since 1988. Based in Tempe, Arizona — part of the dynamic Phoenix metropolitan area — we specialize in delivering
+                low-risk, high-reliability services for integrated circuits, wireless ASICs, custom modules, and PCB-based analog and
+                wireless products. With decades of proven experience, we empower our clients to bring advanced analog and wireless
+                technologies to market with confidence.
 
-            </div>
+                <p><button>Explore how we can accelerate your next design →</button></p>
+</div>
         </section>
 
         <section class="glance">
@@ -88,66 +102,25 @@
 
 
     <footer>
-        <div class="ibm-plex-mono-light">
+        <div class="contact ibm-plex-mono-light">
+            <h2>CONTACT US</h2>
+            <form action="mailto: ishrat.lallmamode@gmail.com">
+            
+                <label for="fname">Full Name</label><br/>
+                <input type="text" id="fullname" name="fullname" placeholder="Full Name"><br/>
 
-            <a href="http://74.208.211.64/spg/index.html"><img src="./index_g_files/logo.svg"
-                    class="footer-logo img-fluid py-5" alt=""></a>
-        </div>
-        <div class="ibm-plex-mono-light">
+                <label for="phonenumber">Phone Number</label><br />
+                <input type="text" id="phonenumber" name="phonenumber" placeholder="Phone Number"><br/>
 
-            <p class="footer-title ibm-plex-mono-semibold">Quick Links</p>
-            <ul class="quicklist">
-                <li><a href="javascript:void(0)">Calculators</a></li>
-                <li><a href="javascript:void(0)">Complementary</a></li>
-                <li><a href="javascript:void(0)">Services</a></li>
-                <li><a href="javascript:void(0)">Technology</a></li>
-                <li><a href="javascript:void(0)">Blog</a></li>
-                <li><a href="javascript:void(0)">Get started</a></li>
-                <li><a href="javascript:void(0)">FAQs</a></li>
-            </ul>
-        </div>
-        <div class="ibm-plex-mono-light">
-            <h3 class="footer-title">Contact Us</h3>
-            <ul class="list2">
-                <li>
-                    <a href="tel:+602-626-0272">
-                        <span><img src="./index_g_files/phone.svg" alt=""></span>
-                        +602-626-0272
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:spg@signalpro.biz">
-                        <span><img src="./index_g_files/mail.svg" alt=""></span>
-                        spg@signalpro.biz
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)">
-                        <span><img src="./index_g_files/location.svg" alt=""></span>
-                        Signal Processing Group Inc., 3561, W. Golden Lane, Chandler, Arizona, 85226, USA
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="ibm-plex-mono-light">
-            <h3 class="footer-title">Follow Us</h3>
-            <ul class="list2">
-                <li>
-                    <a href="javascript:void(0)">
-                        <span><img src="./index_g_files/facebook.svg" alt=""></span>
-                        Facebook
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0)" style="text-decoration: underline;">
-                        <span><img src="./index_g_files/more.svg" alt=""></span>
-                        More
-                    </a>
-                </li>
+                <label for="email">Email</label><br />
+                <input type="text" id="email" name="phonenumber" placeholder="Email"><br/>
 
-            </ul>
+       
+                <label for="subject">How can we help?</label><br/>
+                <textarea id="subject" name="content" placeholder="Write something.." style="height:200px"></textarea><br/>
+            <br/>
+                <input type="submit" value="Submit">
         </div>
-        
         </div>
         </div>
         </div>
